@@ -145,5 +145,5 @@ while True:
     logging.info("Starting sniffing...")
     sniff(stop_filter=arp_display,
           filter="arp or (udp and src port 68 and dst port 67 and src host 0.0.0.0)", store=0, count=0)
-    logging.info("Packet captured, waiting 20s ...")
+    logging.info("Packet captured, waiting 10s ...")
     time.sleep(10)
